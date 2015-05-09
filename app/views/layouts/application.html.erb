@@ -10,16 +10,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <section class="container">
-    <header>
-      <%= render 'commons/header' %>    
-    </header>
 
-    <%= yield %>
+  <!-- navbar -->
+  <%= render 'commons/navbar'%>    
 
-    <footer class="col-md-12">
-      <%= render 'commons/footer' %>    
-    </footer>
-  </section>
+  <!-- header --> 
+  <%= render 'commons/header' %>    
+
+  <!-- content -->
+  <%= yield %>
+  <hr>
+  <!-- footer -->
+  <%= render 'commons/footer' %>    
+
 </body>
 </html>
