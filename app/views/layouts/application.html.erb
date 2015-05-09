@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gerenciamento de Usuários</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <section class="container">
+    <header>
+      <%= render 'commons/header' %>    
+    </header>
+
+    <%= yield %>
+
+    <footer class="col-md-12">
+      <%= render 'commons/footer' %>    
+    </footer>
+  </section>
+</body>
+</html>
